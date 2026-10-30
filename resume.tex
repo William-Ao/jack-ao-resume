@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in Latex
+% Author : Harshibar
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Jack Ao} \\ \vspace{5pt}
+    \small \faPhone* \texttt{+1 (630)-854-2199} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{jack.tang.ao77@gmail.com} \hspace{1pt} $|$ 
+     \hspace{1pt} \faLinkedin \hspace{2pt} \href{https://www.linkedin.com/in/jack-ao-8122aa356/}{\texttt{linkedin.com/in/Jack Ao}}
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Dayton, OH}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Dayton}{Expected May 2030}
+      {Bachelor of Science in Mechanical Engineering}{Dayton, OH}
+      \resumeItemListStart
+        \resumeItem{\textit{Relevant Coursework}: Calculus I, Physics I (Mechanics), Introduction to Engineering Design, Engineering Graphics/CAD, Introduction to Python}
+      \resumeItemListEnd
+  \resumeSubheading 
+  {Benet Academy}{Aug. 2022 -- June 2026}
+  {High School Diploma}{Lisle, IL}
+ \resumeItemListStart 
+    \resumeItem{\textit{Relevant Coursework}: Calculus I, Physics (Mechanics, Electricity \& Magnetism), Principles of Engineering, Introduction to Aerospace Engineering, Basic Python}
+ \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------ACTIVITIES-----------
+\section{EXTRACURRICULAR ACTIVITIES}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Aero Design Team (AIAA) --- University of Dayton}{Sept. 2026 -- Present}{Member, Aerodynamics Team}{Dayton, OH}
+        \resumeItemListStart
+            \resumeItem{Collected and analyzed data from past competition designs in spreadsheets to compare wing loading, weight, and mission scores, in order to optimal aircraft configuration}
+            \resumeItem{Modeled airfoils and wing configurations in XFLR5, comparing lift, drag, and stability results to select the design for a UAV that carries, deploys, tows, and recovers a sensor across three scored missions}
+            \resumeItem{Collaborated with the structural design team, sharing aerodynamic results and iterating wing geometry against weight and strength constraints so the design stayed both efficient and buildable}
+            \resumeItem{Support the surveillance missions by deploying the towed sensor in flight, holding a stable tow at altitude, and recovering it cleanly before landing}
+            \resumeItem{Carry assigned components from CAD through fabrication, ground testing, and flight testing}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      
+    \resumeProjectHeading
+        {\textbf{Wood Plane}} {Jan. 2026 -- March 2026}
+        \resumeItemListStart   
+            \resumeItem{Compared airfoils in Aery32 and selected the section with the best lift-to-drag behavior for a hand-launched glider}
+            \resumeItem{Created a model of each part of the aircraft --- fuselage, wing, ailerons, and stabilizers --- before moving to fabrication}
+            \resumeItem{Hand-measured, cut, and assembled every part from stock, sanding and aligning surfaces to keep the airframe true}
+            \resumeItem{Achieved a flight distance of 71 feet with a 30-gram mass at the nose, tuning nose weight to trim the aircraft for a stable glide}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+         \textbf{Design \& Simulation} {: SolidWorks, AutoCAD, XFLR5, Aery32, OpenRocket}\vspace{2pt} \\
+     \textbf{Programming} {: Python}\vspace{2pt} \\
+     \textbf{Fabrication} {: 3D printing, hand fabrication and assembly, basic shop tools}\vspace{2pt} \\
+     \textbf{Technical} {: Engineering graphics, technical drawing, CAD modeling, airfoil selection}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
