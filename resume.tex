@@ -68,7 +68,8 @@
 
 \urlstyle{same}
 
-\raggedbottom
+% Stretch the spacing between sections and entries so the content fills the page
+\flushbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
@@ -76,6 +77,8 @@
 \titleformat {\section}{
     \bfseries \vspace{2pt} \raggedright \large % header section
 }{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+\titlespacing*{\section}{0pt}{3ex plus 1fil}{2.3ex plus .2ex}
+\setlist[itemize]{itemsep=1pt plus 0.35fil}
 
 %-------------------------
 % Custom commands
